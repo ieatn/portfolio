@@ -1,0 +1,58 @@
+html {
+    font-size: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+}
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.profile-img {
+    width: 300px;
+}
+.icon {
+    font-size: 50px;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+#comments {
+    height: 200px;
+}
+
+.contact-left {
+    width: 500px;
+}
+.projects-arrow {
+    position: absolute;
+    margin-top: 80vh;
+}
+.projects-arrow a {
+    text-decoration: none;
+    color: white;
+}
+.arrow {
+    animation: jump 0.5s forwards ease-in-out infinite alternate;
+}
+@keyframes jump {
+    to {
+        transform: translateY(5px);
+    }
+}
