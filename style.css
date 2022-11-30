@@ -33,6 +33,8 @@ body {
     flex-direction: column;
     width: 100px;
 }
+.tech-text {
+}
 #comments {
     height: 200px;
 }

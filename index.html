@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dennis Zhang</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
@@ -105,7 +104,7 @@
         <div class="col" data-aos="fade-right">
           <div class="card bg-dark text-light">
             <div class="card-body">
-              <div class="h1 mb-3"><i class="bi bi-book"></i></div>
+              <div class="h1 mb-3"><i class="fa-solid fa-book"></i></div>
               <h3 class="card-title mb-3">Library</h3>
               <p class="card-text">Complete, record, and store your books here! Built with javascript, bootstrap, and firebase.</p>
               <a href="https://ieatn.github.io/Library/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
@@ -116,9 +115,9 @@
         <div class="col" data-aos="fade-up">
           <div class="card bg-secondary text-light">
             <div class="card-body">
-              <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+              <div class="h1 mb-3"><i class="fa-solid fa-paintbrush"></i></div>
               <h3 class="card-title mb-3">Etch a Sketch</h3>
-              <p class="card-text">Draw anything you want! Includes a adjustable size, rainbow color button. Built with javascript.</p>
+              <p class="card-text">Draw anything you want! Includes an adjustable size and rainbow color button. Built with javascript.</p>
               <a href="https://ieatn.github.io/Etch-A-Sketch/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
               <a href="https://github.com/ieatn/Etch-A-Sketch" target="_blank" class="btn btn-primary mt-3">Code</a>
             </div>
@@ -140,57 +139,78 @@
   </section>
 
   <section id="about" data-aos="fade-up">
-    <div class="container p-5">
+    <div class="container p-4">
       <div class="row align-items-center justify-content-between p-5">
         <div class="col-md p-5">
           <img class="profile-img" src="https://preview.redd.it/wc1vtk3uqez81.png?width=640&crop=smart&auto=webp&s=14463193b81519d07e62dcaf207d4252c0b4f642" alt="" class="img-fluid">
         </div>
         <div class="col-md p-5">
           <h2 class="text-warning">About me</h2>
-          <p class="lead">I create products that I love and believe in. Want to do something cool together? Let's Talk!</p>
+          <p class="lead">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
           <p class="lead">I'm a student at the University of Washington. I found my passion for coding and am taking a gap year to learn software development!</p> 
-          <p class="lead">Other than coding, I spend my free time learning Chinese, piano, playing soccer, League of Legends, and watching anime.
-            Feel free to reach out to me to play or we can talk about how Attack on Titan is the greatest show ever!</p>
+          <p class="lead">Other than coding, I spend my free time learning Chinese and piano. I also play soccer and League of Legends. 
+            Feel free to reach out to me to play some games, or we can discuss how Attack on Titan is the greatest show ever!</p>
         </div>
       </div>
     </div>
     <div id="skills" data-aos="fade-up">
       <div class="container pb-5 mb-5">
         <h2 class="text-center text-primary">My Toolkit</h2>
+        <!-- first row: MERN  -->
         <div class="row justify-content-around">
           <div class="skill">
-            <i class="fab fa-react icon"></i>
+            <i class="fa-brands fa-react icon"></i>
             <p class="tech-text lead">REACT</p>
           </div>
           <div class="skill">
-            <i class="fab fa-node icon"></i>
+            <i class="fa-solid fa-server icon"></i>
             <p class="tech-text lead">NODE JS</p>
           </div>
           <div class="skill">
-            <img class="img-fluid mongodb-icon" src="https://vigyankayastha.com/assets/mongodb.png" alt="">
-            <p class="tech-text lead mb-5">MONGODB</p>
+            <i class="fa-solid fa-server icon"></i>
+            <p class="tech-text lead">EXPRESS</p>
           </div>
           <div class="skill">
-            <img class="img-fluid express-icon" src="https://vigyankayastha.com/assets/expressjs.png" alt="">
-            <p class="tech-text lead mt-2">EXPRESS</p>
+            <i class="fa-solid fa-database icon"></i>
+            <p class="tech-text lead">MONGODB</p>
           </div>
         </div>
+        <!-- second row: fundamentals -->
         <div class="row justify-content-around">
           <div class="skill">
-            <i class="fab fa-html5 icon"></i>
+            <i class="fa-brands fa-html5 icon"></i>
             <p class="tech-text lead">HTML</p>
           </div>
           <div class="skill">
-            <i class="fab fa-css3 icon"></i>
+            <i class="fa-brands fa-css3-alt icon"></i>
             <p class="tech-text lead">CSS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-js icon"></i>
+            <p class="tech-text lead">JAVASCRIPT</p>
           </div>
           <div class="skill">
             <i class="fa-brands fa-bootstrap icon"></i>
             <p class="tech-text lead">BOOTSTRAP</p>
           </div>
+        </div>
+        <!-- third row: utility -->
+        <div class="row justify-content-around">
           <div class="skill">
-            <i class="fab fa-js icon"></i>
-            <p class="tech-text lead">JAVASCRIPT</p>
+            <i class="fa-brands fa-git-alt icon"></i>
+            <p class="tech-text lead">GIT</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-wordpress icon"></i>
+            <p class="tech-text lead">WORDPRESS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-universal-access icon"></i>
+            <p class="tech-text lead">ACCESSABILITY</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-mobile icon"></i>
+            <p class="tech-text lead text-center">RESPONSIVE DESIGN</p>
           </div>
         </div>
       </div>
@@ -205,9 +225,9 @@
           <p class="lead">If you ever want to have a quick chat - you can find me on social media or you can message me here!</p>
           <div class="contact-links">
             <a href="https://github.com/ieatn" class="text-dark m-5"><i class="fa-brands fa-github icon"></i></a>
-            <a href="https://www.facebook.com/dennis.zhang.9803" class="text-primary m-5"><i class="fab fa-facebook-square icon"></i></a>
+            <a href="https://www.facebook.com/dennis.zhang.9803" class="text-primary m-5"><i class="fa-brands fa-facebook icon"></i></a>
             <a href="https://twitter.com/ieatnubcake" class="text-primary m-5"><i class="fa-brands fa-twitter icon"></i></a>
-            <a href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/" class="text-primary m-5"><i class="fab fa-linkedin-in icon"></i></a>
+            <a href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/" class="text-primary m-5"><i class="fa-brands fa-linkedin icon"></i></i></a>
           </div>
         </div>
           <form action="https://formspree.io/f/xnqrykvv" method="POST" class="w-50">
