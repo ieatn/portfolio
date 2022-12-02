@@ -6,9 +6,6 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    
-}
 #profile {
     display: flex;
     justify-content: center;
@@ -16,10 +13,17 @@ body {
     height: 90vh;
 }
 .profile-img {
-    width: 300px;
+    width: 500px;
+    border-radius: 25px;
+}
+.tech-text {
+    font-weight: 600;
 }
 .icon {
     font-size: 50px;
+}
+.icon-small {
+    font-size: 40px;
 }
 .contact-links {
     display: flex;
@@ -33,12 +37,9 @@ body {
     flex-direction: column;
     width: 100px;
 }
-.tech-text {
-}
 #comments {
     height: 200px;
 }
-
 .contact-left {
     width: 500px;
 }
@@ -88,4 +89,12 @@ body {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.fa-github {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }

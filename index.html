@@ -47,11 +47,14 @@
   <section id="profile" class="bg-dark text-light p-5 text-center text-sm-start">
     <div class="container" data-aos="fade-up">
       <div class="d-sm-flex align-items-center justify-content-around">
-        <div class="left">
+        <div class="profile-left">
           <h1 class="display-3">Hello! <span class="wave">👋</span> I'm Dennis.</h1>
-          <h2>Front End <span class="text-warning">Developer</span> from Seattle, Washington.<br>I build beautiful and functional user interfaces, <br> writing clean and efficient code.</h2>
+          <h2><span class="text-warning">Front End Developer.</span><br>I build beautiful and functional user interfaces, <br> writing clean and efficient code.</h2>
+          <a href="#contact"><button class="btn btn-primary mt-3">Let's Connect</button></a>
         </div>
-          <img class="profile-img img-fluid d-none d-sm-block" src="https://preview.redd.it/wc1vtk3uqez81.png?width=640&crop=smart&auto=webp&s=14463193b81519d07e62dcaf207d4252c0b4f642" alt="">
+        <div class="profile-right w-25">
+          <img class="img-fluid d-none d-sm-block" src="https://preview.redd.it/wc1vtk3uqez81.png?width=640&crop=smart&auto=webp&s=14463193b81519d07e62dcaf207d4252c0b4f642" alt="">
+        </div>
       </div>
     </div>
     <div class="projects-arrow">
@@ -100,13 +103,13 @@
       </div>
       <!-- MORE PROJECTS -->
       <div class="row text-center">
-        <h2 class="text-center p-5 text-secondary" data-aos="fade-in">More Projects</h2>
+        <h2 class="text-center p-5 text-secondary" data-aos="fade-in">Check Out These Amazing Projects!</h2>
         <div class="col" data-aos="fade-right">
           <div class="card bg-dark text-light">
             <div class="card-body">
               <div class="h1 mb-3"><i class="fa-solid fa-book"></i></div>
               <h3 class="card-title mb-3">Library</h3>
-              <p class="card-text">Complete, record, and store your books here! Built with javascript, bootstrap, and firebase.</p>
+              <p class="card-text">Complete, record, and store your books here! Built with Javascript, Bootstrap, and Firebase.</p>
               <a href="https://ieatn.github.io/Library/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
               <a href="https://github.com/ieatn/Library" target="_blank" class="btn btn-primary mt-3">Code</a>
             </div>
@@ -117,7 +120,7 @@
             <div class="card-body">
               <div class="h1 mb-3"><i class="fa-solid fa-paintbrush"></i></div>
               <h3 class="card-title mb-3">Etch a Sketch</h3>
-              <p class="card-text">Draw anything you want! Includes an adjustable size and rainbow color button. Built with javascript.</p>
+              <p class="card-text">Draw anything you want! Includes a Rainbow Color Button. Built with Javascript.</p>
               <a href="https://ieatn.github.io/Etch-A-Sketch/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
               <a href="https://github.com/ieatn/Etch-A-Sketch" target="_blank" class="btn btn-primary mt-3">Code</a>
             </div>
@@ -128,7 +131,7 @@
             <div class="card-body">
               <div class="h1 mb-3"><i class="fas fa-dog"></i></div>
               <h3 class="card-title mb-3">Infinite Doggos</h3>
-              <p class="card-text">Click on a button to fetch a cute dog! Built with javascript and api.</p>
+              <p class="card-text">Click on a button to fetch a cute dog! Built with Javascript and API.</p>
               <a href="https://ieatn.github.io/Infinite-Doggos/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
               <a href="https://github.com/ieatn/Infinite-Doggos" target="_blank" class="btn btn-primary mt-3">Code</a>
             </div>
@@ -142,7 +145,7 @@
     <div class="container p-4">
       <div class="row align-items-center justify-content-between p-5">
         <div class="col-md p-5">
-          <img class="profile-img" src="https://preview.redd.it/wc1vtk3uqez81.png?width=640&crop=smart&auto=webp&s=14463193b81519d07e62dcaf207d4252c0b4f642" alt="" class="img-fluid">
+          <img class="profile-img" src="assets/images/profile-picture.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md p-5">
           <h2 class="text-warning">About me</h2>
@@ -156,26 +159,7 @@
     <div id="skills" data-aos="fade-up">
       <div class="container pb-5 mb-5">
         <h2 class="text-center text-primary">My Toolkit</h2>
-        <!-- first row: MERN  -->
-        <div class="row justify-content-around">
-          <div class="skill">
-            <i class="fa-brands fa-react icon"></i>
-            <p class="tech-text lead">REACT</p>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-server icon"></i>
-            <p class="tech-text lead">NODE JS</p>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-server icon"></i>
-            <p class="tech-text lead">EXPRESS</p>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-database icon"></i>
-            <p class="tech-text lead">MONGODB</p>
-          </div>
-        </div>
-        <!-- second row: fundamentals -->
+        <!-- first row: languages -->
         <div class="row justify-content-around">
           <div class="skill">
             <i class="fa-brands fa-html5 icon"></i>
@@ -190,19 +174,35 @@
             <p class="tech-text lead">JAVASCRIPT</p>
           </div>
           <div class="skill">
-            <i class="fa-brands fa-bootstrap icon"></i>
-            <p class="tech-text lead">BOOTSTRAP</p>
+            <i class="fa-brands fa-react icon"></i>
+            <p class="tech-text lead">REACT</p>
           </div>
         </div>
-        <!-- third row: utility -->
+        <!-- second row: utility -->
         <div class="row justify-content-around">
           <div class="skill">
             <i class="fa-brands fa-git-alt icon"></i>
             <p class="tech-text lead">GIT</p>
           </div>
           <div class="skill">
-            <i class="fa-brands fa-wordpress icon"></i>
-            <p class="tech-text lead">WORDPRESS</p>
+            <i class="fa-brands fa-github icon"></i>
+            <p class="tech-text lead">GITHUB</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-code icon-small"></i>
+            <p class="tech-text lead text-center">REST API</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-terminal icon-small"></i>
+            <p class="tech-text lead">TERMINAL</p>
+          </div>
+
+        </div>
+        <!-- third row: style -->
+        <div class="row justify-content-around">
+          <div class="skill">
+            <i class="fa-brands fa-bootstrap icon"></i>
+            <p class="tech-text lead">BOOTSTRAP</p>
           </div>
           <div class="skill">
             <i class="fa-solid fa-universal-access icon"></i>
@@ -212,8 +212,11 @@
             <i class="fa-solid fa-mobile icon"></i>
             <p class="tech-text lead text-center">RESPONSIVE DESIGN</p>
           </div>
+          <div class="skill">
+            <i class="fa-solid fa-database icon"></i>
+            <p class="tech-text lead">FIREBASE</p>
+          </div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -249,7 +252,7 @@
   </section>
 
   <footer>
-    <p class="text-center mt-5 pt-5">Made with 🧡 by Dennis Zhang</p>
+    <p class="text-center mt-4 pt-4">Made with 🧡 by Dennis Zhang</p>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
