@@ -11,11 +11,13 @@ html {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100%;
 }
 .profile-img {
+    border-radius: 15px;
     width: 500px;
-    border-radius: 25px;
 }
+
 .tech-text {
     font-weight: 600;
 }
@@ -24,6 +26,14 @@ html {
 }
 .icon-small {
     font-size: 40px;
+}
+@media screen and (max-width: 590px) {
+    .tech-text {
+        font-size: 12px;
+    }
+    .icon {
+        font-size: 24px;
+    }
 }
 .contact-links {
     display: flex;
@@ -53,6 +63,9 @@ html {
 }
 .arrow {
     animation: jump 0.5s forwards ease-in-out infinite alternate;
+}
+#projects {
+    width: 100%;
 }
 @keyframes jump {
     to {
@@ -98,3 +111,4 @@ html {
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
 }
+

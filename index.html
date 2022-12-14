@@ -16,7 +16,7 @@
   <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
     <div class="container">
       <!-- logo -->
-      <a href="#" class="navbar-brand"><span id="text"></span></a>
+      <a href="#" class="navbar-brand">Dennis Zhang</a>
       <!-- collapse btn -->
       <button 
         class="navbar-toggler"
@@ -42,14 +42,12 @@
     </div>
   </nav>
   
-  <!-- HEADER -->
-  <!-- sm-start puts text on left for big screen, text-center for small screen -->
   <section id="profile" class="bg-dark text-light p-5 text-center text-sm-start">
     <div class="container" data-aos="fade-up">
       <div class="d-sm-flex align-items-center justify-content-around">
         <div class="profile-left">
           <h1 class="display-3">Hello! <span class="wave">👋</span> I'm Dennis.</h1>
-          <h2><span class="text-warning">Front End Developer.</span><br>I build beautiful and functional user interfaces, <br> writing clean and efficient code.</h2>
+          <h2><span class="text-warning" id="text">Front End Developer.</span><br>I build beautiful and functional user interfaces, <br> writing clean and efficient code.</h2>
           <a href="#contact"><button class="btn btn-primary mt-3">Let's Connect</button></a>
         </div>
         <div class="profile-right w-25">
@@ -67,14 +65,14 @@
   <!-- PROJECTS -->
   <!-- want to add scrollbar for projects -->
   <section id="projects" class="p-5 bg-light">
-    <div class="container p-5">
+    <div class="container p-5 d-sm-block d-none">
       <div class="row align-items-center justify-content-between p-5" data-aos="fade-right">
         <div class="col-md">
-          <img src="https://codepen.io/chriscoyier/pen/wvXpxZd/image/large.png" alt="" class="img-fluid">
+          <img class="img-fluid" src="https://codepen.io/chriscoyier/pen/wvXpxZd/image/large.png" alt="">
         </div>
         <div class="col-md p-5">
           <h2>Etch a Sketch</h2>
-          <p class="lead">Draw anything you want! You can change colors, use rainbow, and adjust size. Learned about functions and event listeners. Built using Javascript.</p>
+          <p class="lead d-sm-block d-none">Draw anything you want! You can change colors, use rainbow, and adjust size. Learned about functions and event listeners. Built using Javascript.</p>
           <a href="https://ieatn.github.io/Etch-A-Sketch/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
           <a href="https://github.com/ieatn/Etch-A-Sketch" target="_blank" class="btn btn-primary mt-3">Code</a>
         </div>
@@ -82,29 +80,31 @@
       <div class="row align-items-center justify-content-between p-5" data-aos="fade-left">
         <div class="col-md p-5">
           <h2>Infinite Doggos</h2>
-          <p class="lead">Click on a button to fetch a cute dog! Uses an API to get data of a random dog image. Built with Javascript.</p>
+          <p class="lead d-sm-block d-none">Click on a button to fetch a cute dog! Uses an API to get data of a random dog image. Built with Javascript.</p>
           <a href="https://ieatn.github.io/Infinite-Doggos/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
           <a href="https://github.com/ieatn/Infinite-Doggos" target="_blank" class="btn btn-primary mt-3">Code</a>
         </div>
         <div class="col-md">
-          <img src="https://codepen.io/chriscoyier/pen/jOKvpjR/image/large.png" alt="" class="img-fluid">
+          <img class="img-fluid" src="https://codepen.io/chriscoyier/pen/jOKvpjR/image/large.png" alt="">
         </div>
       </div>
       <div class="row align-items-center justify-content-between p-5" data-aos="fade-right">
         <div class="col-md">
-          <img src="https://codepen.io/chriscoyier/pen/vYrpazE/image/large.png" alt="" class="img-fluid">
+          <img class="img-fluid" src="https://codepen.io/chriscoyier/pen/vYrpazE/image/large.png" alt="">
         </div>
         <div class="col-md p-5">
           <h2>Library</h2>
-          <p class="lead">Complete, Record, and Store your books here! Local Storage will store your books so you can come back and see your books. You can also sign in with gmail. Built with Bootstrap, Firebase, and Javascript. </p>
+          <p class="lead d-sm-block d-none">Complete, Record, and Store your books here! Local Storage will store your books so you can come back and see your books. You can also sign in with gmail. Built with Bootstrap, Firebase, and Javascript. </p>
           <a href="https://ieatn.github.io/Library/" target="_blank" class="btn btn-primary mt-3">Live Demo</a>
           <a href="https://github.com/ieatn/Library" target="_blank" class="btn btn-primary mt-3">Code</a>
         </div>
       </div>
+    </div>
+    <div class="container">
       <!-- MORE PROJECTS -->
       <div class="row text-center">
         <h2 class="text-center p-5 text-secondary" data-aos="fade-in">Check Out These Amazing Projects!</h2>
-        <div class="col" data-aos="fade-right">
+        <div class="col-md" data-aos="fade-right">
           <div class="card bg-dark text-light">
             <div class="card-body">
               <div class="h1 mb-3"><i class="fa-solid fa-book"></i></div>
@@ -115,7 +115,7 @@
             </div>
           </div>
         </div>
-        <div class="col" data-aos="fade-up">
+        <div class="col-md" data-aos="fade-up">
           <div class="card bg-secondary text-light">
             <div class="card-body">
               <div class="h1 mb-3"><i class="fa-solid fa-paintbrush"></i></div>
@@ -126,7 +126,7 @@
             </div>
           </div>
         </div>
-        <div class="col" data-aos="fade-left">
+        <div class="col-md" data-aos="fade-left">
           <div class="card bg-dark text-light">
             <div class="card-body">
               <div class="h1 mb-3"><i class="fas fa-dog"></i></div>
@@ -145,7 +145,7 @@
     <div class="container p-4">
       <div class="row align-items-center justify-content-between p-5">
         <div class="col-md p-5">
-          <img class="profile-img" src="assets/images/profile-picture.jpg" alt="" class="img-fluid">
+          <img class="profile-img img-fluid d-sm-block" src="assets/images/profile-picture.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md p-5">
           <h2 class="text-warning">About me</h2>
@@ -173,36 +173,27 @@
             <i class="fa-brands fa-js icon"></i>
             <p class="tech-text lead">JAVASCRIPT</p>
           </div>
-          <div class="skill">
-            <i class="fa-brands fa-react icon"></i>
-            <p class="tech-text lead">REACT</p>
-          </div>
         </div>
         <!-- second row: utility -->
         <div class="row justify-content-around">
           <div class="skill">
-            <i class="fa-brands fa-git-alt icon"></i>
-            <p class="tech-text lead">GIT</p>
+            <i class="fa-brands fa-react icon"></i>
+            <p class="tech-text lead">REACT</p>
           </div>
           <div class="skill">
             <i class="fa-brands fa-github icon"></i>
             <p class="tech-text lead">GITHUB</p>
           </div>
           <div class="skill">
-            <i class="fa-solid fa-code icon-small"></i>
+            <i class="fa-solid fa-code icon-small icon"></i>
             <p class="tech-text lead text-center">REST API</p>
           </div>
-          <div class="skill">
-            <i class="fa-solid fa-terminal icon-small"></i>
-            <p class="tech-text lead">TERMINAL</p>
-          </div>
-
         </div>
         <!-- third row: style -->
         <div class="row justify-content-around">
           <div class="skill">
-            <i class="fa-brands fa-bootstrap icon"></i>
-            <p class="tech-text lead">BOOTSTRAP</p>
+            <i class="fa-brands fa-git-alt icon"></i>
+            <p class="tech-text lead">GIT</p>
           </div>
           <div class="skill">
             <i class="fa-solid fa-universal-access icon"></i>
@@ -212,10 +203,6 @@
             <i class="fa-solid fa-mobile icon"></i>
             <p class="tech-text lead text-center">RESPONSIVE DESIGN</p>
           </div>
-          <div class="skill">
-            <i class="fa-solid fa-database icon"></i>
-            <p class="tech-text lead">FIREBASE</p>
-          </div>
         </div>
     </div>
   </section>
@@ -223,30 +210,28 @@
   <section id="contact">
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-around">
-        <div class="contact-left">
+        <div class="container">
           <h2>Let's Connect!</h2>
           <p class="lead">If you ever want to have a quick chat - you can find me on social media or you can message me here!</p>
           <div class="contact-links">
-            <a href="https://github.com/ieatn" class="text-dark m-5"><i class="fa-brands fa-github icon"></i></a>
-            <a href="https://www.facebook.com/dennis.zhang.9803" class="text-primary m-5"><i class="fa-brands fa-facebook icon"></i></a>
-            <a href="https://twitter.com/ieatnubcake" class="text-primary m-5"><i class="fa-brands fa-twitter icon"></i></a>
-            <a href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/" class="text-primary m-5"><i class="fa-brands fa-linkedin icon"></i></i></a>
+            <a class="m-3" href="https://github.com/ieatn" class="text-dark"><i class="fa-brands fa-github icon"></i></a>
+            <a class="m-3" href="https://www.facebook.com/dennis.zhang.9803" class="text-primary"><i class="fa-brands fa-facebook icon"></i></a>
+            <a class="m-3" href="https://twitter.com/ieatnubcake" class="text-primary"><i class="fa-brands fa-twitter icon"></i></a>
+            <a class="m-3" href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/" class="text-primary"><i class="fa-brands fa-linkedin icon"></i></i></a>
           </div>
         </div>
-          <form action="https://formspree.io/f/xnqrykvv" method="POST" class="w-50">
-            <div class="mb-3">
-              <input type="text" class="form-control" id="Name" name="name" placeholder="Name">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="Email" name="email" placeholder="Email">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" id="comments" name="message" rows="3" placeholder="Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-          
+        <form action="https://formspree.io/f/xnqrykvv" method="POST" class="w-50">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="Name" name="name" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="Email" name="email" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="comments" name="message" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </section>

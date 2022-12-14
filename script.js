@@ -1,5 +1,5 @@
 const title = document.getElementById('text')
-const text = "Dennis Zhang"
+const text = "Front End Developer."
 let index = 0;
 const display = () => {
     title.textContent = text.slice(0, index)
@@ -10,6 +10,3 @@ const display = () => {
 }
 
 setInterval(display, 100)
-
-// dark mode
-// classlist.remove(dark), classlist.add(light)
