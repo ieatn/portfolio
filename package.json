@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "LIVE DEMO: https://ieatn.github.io/portfolio/",
+  "main": "script.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "dev": "tailwindcss -i ./input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ieatn/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ieatn/portfolio/issues"
+  },
+  "homepage": "https://github.com/ieatn/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

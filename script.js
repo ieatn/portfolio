@@ -1,12 +1,7 @@
-const title = document.getElementById('text')
-const text = "Front End Developer."
-let index = 0;
-const display = () => {
-    title.textContent = text.slice(0, index)
-    index++;
-    if (index > text.length * 3) {
-        index = 0;
-    }
-}
+const btn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
 
-setInterval(display, 100)
+btn.addEventListener('click', () => {
+    menu.classList.toggle('flex')
+    menu.classList.toggle('hidden')
+})
