@@ -15,7 +15,7 @@
   <nav class="bg-darkBlue text-white p-6 pb-12 md:pb-32">
     <div class="container flex items-center justify-between mx-auto">
       <!-- left  -->
-      <div class="text-xl md:text-2xl">Dennis Zhang</div>
+      <div class="text-xl md:text-2xl"><a href="#">Dennis Zhang</a></div>
       <!-- right -->
       <div class="hidden md:flex space-x-6">
         <a class="hover:text-darkGrayishBlue" href="#projects">Projects</a>
@@ -26,8 +26,8 @@
       <button id="menu-btn" class="block md:hidden"><img src="images/icon-hamburger-white.svg" alt=""></button>
     </div>
     <!-- mobile menu -->
-    <div class="lg:hidden">
-      <div id="menu" class="hidden flex-col items-center self-center drop-shadow-md space-y-6 mt-12">
+      <div class="lg:hidden">
+        <div id="menu" class="hidden flex-col items-center self-center drop-shadow-md space-y-6 mt-12">
         <a class="hover:text-darkGrayishBlue" href="#projects">Projects</a>
         <a class="hover:text-darkGrayishBlue" href="#about">About Me</a>
         <a class="hover:text-darkGrayishBlue" href="#contact">Contact</a>
@@ -43,8 +43,8 @@
       <div class="text-center md:text-left md:mb-0">
         <h1 class="text-3xl md:text-6xl mb-8">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
         <h2 class="text-xl md:text-4xl mb-8 text-yellow-500">Front End Developer.</h2>
-        <h2 class="text-base md:text-2xl mb-8">I build beautiful and functional user interfaces,</h2>
-        <h2 class="text-base md:text-2xl mb-8">writing clean and efficient code.</h2>
+        <h2 class="text-base mb-8 md:text-2xl md:mb-8">I build beautiful and functional user interfaces, <span class="mb-8 md:hidden">writing clean and efficient code.</span></h2>
+        <h2 class="hidden text-base md:text-2xl mb-8 md:block">writing clean and efficient code.</h2>
         <div><a class="btn mt-12" href="#contact">Let's Connect</a></div>
       </div>
       <!-- right -->
@@ -53,7 +53,7 @@
       </div>
     </div>
     <!-- bottom -->
-    <div class="mt-8 md:mt-64">
+    <div class="mt-8 md:mt-">
       <a href="#projects">
         <p class="text-center pb-12">My Works <i class="fas fa-angle-down" id="arrow"></i></p>
       </a>
@@ -104,13 +104,13 @@
       <!-- MORE PROJECTS -->
       <h2 class="border-b text-darkBlue font-bold md:text-2xl" data-aos="fade-in">Fun Projects</h2>
 
-      <div class="flex flex-col space-y-4 px-3 md:flex-row md:w-full md:space-x-12 md:space-y-0">
+      <div class="flex flex-col text-center space-y-4 px-3 md:flex-row md:w-full md:space-x-12 md:space-y-0">
         <!-- item 1 -->
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-right">
           <i class="fa-solid fa-book text-4xl"></i>
           <h3 class="text-xl">Library</h3>
           <p>Complete, record, and store your books here!</p>
-          <div class="flex space-x-4">
+          <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/Library/" target="_blank">Demo</a>
             <a class="btn" href="https://github.com/ieatn/Library" target="_blank">Code</a>
           </div>
@@ -119,8 +119,8 @@
         <div class="flex flex-col items-center rounded-md bg-gray-300 p-6 md:space-y-4 md:w-1/3" data-aos="fade-up">
           <i class="fa-solid fa-paintbrush text-4xl"></i>
           <h3 class="text-xl">Etch a Sketch</h3>
-          <p>Draw anything you want!</p>
-          <div class="flex space-x-4">
+          <p>Draw anything you want! Lorem ipsum dolor sit amet.</p>
+          <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/Etch-A-Sketch/" target="_blank">Demo</a>
             <a class="btn" href="https://github.com/ieatn/Etch-A-Sketch" target="_blank">Code</a>
           </div>
@@ -129,8 +129,8 @@
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-left">
           <i class="text-4xl fa-solid fa-mobile"></i>
           <h3 class="text-xl">Accordion Card</h3>
-          <p>a cool accordion card</p>
-          <div class="flex space-x-4">
+          <p>a cool accordion card Lorem ipsum dolor sit amet.</p>
+          <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/FAQ-Accordion-Card/" target="_blank">Demo</a>
             <a class="btn" href="https://github.com/ieatn/FAQ-Accordion-Card" target="_blank">Code</a>
           </div>
@@ -146,7 +146,7 @@
         <img class="overflow-hidden rounded-xl" src="images/profile-picture.jpg" alt="">
       </div>
       <!-- right -->
-      <div class="max-w-md text-center md:w-1/2 md:text-left md:ml-12">
+      <div class="max-w-md text-center px-3 md:w-1/2 md:text-left md:ml-12 md:px-0">
         <h2 class="text-xl text-yellow-400 md:text-4xl">About me</h2>
         <p class="my-6">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
         <p class="my-6">I'm a student at the University of Washington. I found my passion for coding and am eager to get into the industry of software development!</p> 
@@ -158,7 +158,7 @@
       <div class="max-w-6xl text-center mx-auto mt-12">
         <h2 class="text-xl md:text-4xl">My Toolkit</h2>
         <div class="grid grid-cols-3 space-y-3">
-          <div>
+          <div class="mt-3">
             <i class="text-orange-400 text-4xl fa-brands fa-html5"></i>
             <p>HTML</p>
           </div>
@@ -175,7 +175,7 @@
             <p class="">REACT</p>
           </div>
           <div>
-            <i class="text-green-200 text-4xl fa-brands fa-node-js"></i>
+            <i class="text-green-900 text-4xl fa-brands fa-node-js"></i>
             <p class="">NODEJS</p>
           </div>
           <div class="flex flex-col justify-center items-center">
@@ -220,19 +220,31 @@
         <p class="hidden md:block">If you ever want to have a quick chat - you can find me on social media or you can message me here!</p>
         <!-- SOCIAL MEDIA -->
         <div class="flex justify-between max-w-md mx-auto mt-6">
-          <a href="https://github.com/ieatn">
+          <a href="https://github.com/ieatn" class="relative group">
             <i class="text-4xl fa-brands fa-github icon"></i>
+            <div class="hidden group-hover:block absolute bg-gray-100 text-gray-800 p-2 rounded shadow-lg">
+              GitHub
+            </div>
           </a>
-          <a class="" href="https://www.facebook.com/dennis.zhang.9803">
+          <a href="https://www.facebook.com/dennis.zhang.9803" class="relative group">
             <i class="text-blue-700 text-4xl fa-brands fa-facebook icon"></i>
+            <div class="hidden group-hover:block absolute bg-gray-100 text-gray-800 p-2 rounded shadow-lg">
+              Facebook
+            </div>
           </a>
-          <a class="" href="https://twitter.com/ieatnubcake">
+          <a href="https://twitter.com/ieatnubcake" class="relative group">
             <i class="text-blue-500 text-4xl fa-brands fa-twitter icon"></i>
+            <div class="hidden group-hover:block absolute bg-gray-100 text-gray-800 p-2 rounded shadow-lg">
+              Twitter
+            </div>
           </a>
-          <a class="" href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/">
+          <a href="https://www.linkedin.com/in/dennis-zhang-b3b4a1163/" class="relative group">
             <i class="text-blue-600 text-4xl fa-brands fa-linkedin icon"></i>
+            <div class="hidden group-hover:block absolute bg-gray-100 text-gray-800 p-2 rounded shadow-lg">
+              LinkedIn
+            </div>
           </a>
-        </div>
+        </div>        
       </div>
       <!-- RIGHT -->
       <form class="flex flex-col mt-12 md:w-1/2 md:mt-0" action="https://formspree.io/f/xnqrykvv" method="POST">
@@ -253,6 +265,10 @@
   <footer>
     <p class="text-center text-sm mt-3 pt-3">Made with 🧡 by Dennis Zhang</p>
   </footer>
+
+  <button id="scroll-top-btn" class="fixed bottom-6 right-7 bg-gray-900 text-white rounded-full shadow-lg">
+    <i class="inline-flex items-center justify-center w-10 h-10 fas fa-arrow-up"></i>
+  </button>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
