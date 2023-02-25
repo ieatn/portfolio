@@ -12,7 +12,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="bg-darkBlue text-white p-6 pb-12 md:pb-32">
+  <nav class="bg-darkBlue text-white p-6 pb-12 md:pb-24">
     <div class="container flex items-center justify-between mx-auto">
       <!-- left  -->
       <div class="text-xl md:text-2xl"><a href="#">Dennis Zhang</a></div>
@@ -36,7 +36,7 @@
   </nav>
 
   <!-- HERO -->
-  <section id="hero" class="bg-darkBlue text-white pt-16 md:pt-12 md:pb-24">
+  <section id="hero" class="bg-darkBlue text-white pt-8 pb-64 md:pb-8 lg:pb-64 lg:pt-24">
     <!-- flex container -->
     <div class="container flex flex-col md:flex-row justify-around items-center mx-auto" data-aos="fade-up">
       <!-- left -->
@@ -53,9 +53,9 @@
       </div>
     </div>
     <!-- bottom -->
-    <div class="mt-8 md:mt-">
+    <div>
       <a href="#projects">
-        <p class="text-center pb-12">My Works <i class="fas fa-angle-down" id="arrow"></i></p>
+        <p class="text-center mt-64 md:mt-12 lg:mt-64">My Works <i class="fas fa-angle-down" id="arrow"></i></p>
       </a>
     </div>
   </section>
@@ -65,40 +65,70 @@
     <!-- perma bug with aos library breaking on small screens because of the added padding, 
     2 hours searching and found solution, just add the inline style tag at the end -->
     <div class="container flex flex-col justify-center items-center text-center mx-auto space-y-20 pt-20 md:text-left" style="overflow-x: hidden; overflow-y: hidden">
+      
+      
+
+      <!-- item 1 -->
       <div class="flex flex-col justify-center items-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right" style="overflow-x: hidden">
-        <a class="overflow-hidden rounded-xl md:w-1/2" href="">
-          <img src="images/todolist.jpg" alt="">
-        </a>
+       
+        <!-- left -->
+        <div class="overflow-hidden rounded-xl md:w-1/2">
+          <div class="relative hover:opacity-50 transition-opacity duration-300 ease-in-out" href="#">
+            <img class="w-full h-auto" src="images/todolist.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div class="text-2xl font-bold">hello world</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- right -->
         <div class="space-y-4">
           <h1>MERN TODOLIST</h1>
           <p>a full stack application that fetches data from a server</p>
-          <button class="btn"><a href="https://mern-a6hq40xkt-ieatn.vercel.app/">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/mern-app">CODE</a></button>
+          <button class="btn"><a href="https://mern-a6hq40xkt-ieatn.vercel.app/" target="_blank">DEMO</a></button>
+          <button class="btn"><a href="https://github.com/ieatn/mern-app" target="_blank">CODE</a></button>
         </div>
       </div>
+      <!-- item 2 -->
       <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-left">
-        <a class="overflow-hidden rounded-xl md:hidden md:w-1/2" href="">
+        
+        <div class="overflow-hidden rounded-xl md:hidden md:w-1/2" href="" target="_blank">
           <img src="images/airbnb.png" alt="">
-        </a>
+        </div>
         <div class="space-y-4">
           <h1>REACT AIRBNB CLONE</h1>
           <p>airbnb website</p>
-          <button class="btn"><a href="https://airbnb-clon-v8763e1hw-ieatn.vercel.app/">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/airbnb-clon">CODE</a></button>
+          <button class="btn"><a href="https://airbnb-clon-v8763e1hw-ieatn.vercel.app/" target="_blank">DEMO</a></button>
+          <button class="btn"><a href="https://github.com/ieatn/airbnb-clon" target="_blank">CODE</a></button>
         </div>
-        <a class="hidden overflow-hidden rounded-xl md:flex md:w-1/2" href="">
-          <img src="images/airbnb.png" alt="">
-        </a>
+        <div class="hidden relative overflow-hidden rounded-xl md:w-1/2 md:flex">
+          <a class="hover:opacity-50 transition-opacity duration-300 ease-in-out" href="#">
+            <img class="w-full h-auto" src="images/airbnb.png" alt="">
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div class="text-2xl">Tailwind</div>
+              <div class="text-2xl">React</div>
+              <div class="text-2xl">Express</div>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right">
-        <a class="overflow-hidden rounded-xl md:w-1/2" href="">
-          <img src="images/desktop-preview.jpg" alt="">
-        </a>
+        
+        <div class="relative overflow-hidden rounded-xl md:w-1/2">
+          <a class="hover:opacity-50 transition-opacity duration-300 ease-in-out" href="#">
+            <img class="w-full h-auto" src="images/desktop-preview.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div class="text-2xl">Tailwind</div>
+              <div class="text-2xl">React</div>
+              <div class="text-2xl">Express</div>
+            </div>
+          </a>
+        </div>
         <div class="space-y-4">
           <h1>MANAGE LANDING PAGE</h1>
           <p>beautiful responsive landing page</p>
-          <button class="btn"><a href="https://ieatn.github.io/Frontend-Mentor-Manage-landing-page/">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/Frontend-Mentor-Manage-landing-page">CODE</a></button>
+          <button class="btn"><a href="https://ieatn.github.io/Frontend-Mentor-Manage-landing-page/" target="_blank">DEMO</a></button>
+          <button class="btn"><a href="https://github.com/ieatn/Frontend-Mentor-Manage-landing-page" target="_blank">CODE</a></button>
         </div>
       </div>
       <!-- MORE PROJECTS -->
@@ -128,7 +158,7 @@
         <!-- item 3 -->
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-left">
           <i class="text-4xl fa-solid fa-mobile"></i>
-          <h3 class="text-xl">Accordion Card</h3>
+          <h3 class="text-xl">FAQ Card</h3>
           <p>a cool accordion card Lorem ipsum dolor sit amet.</p>
           <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/FAQ-Accordion-Card/" target="_blank">Demo</a>

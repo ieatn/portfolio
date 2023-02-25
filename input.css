@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* when clicking a link, make page scroll smoothly */
+/* not working on mobile or desktop but works on laptop */
 html {
     scroll-behavior: smooth;
 }
