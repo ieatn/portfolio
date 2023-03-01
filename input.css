@@ -12,6 +12,9 @@ html {
     .btn{
         @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md;
     }
+    .badge {
+        @apply bg-gray-600 text-gray-100 font-bold rounded-full absolute top-0 ml-2 mt-2 inline-flex items-center p-2
+    }
 }
 #arrow {
     animation: jump 0.5s forwards ease-in-out infinite alternate;
@@ -52,6 +55,9 @@ html {
         transform: rotate(0deg);
     }
 }
+
+/* animation that rotates my name around */
+
 .fa-github {
     transition: transform 0.3s ease-in-out;
 }
