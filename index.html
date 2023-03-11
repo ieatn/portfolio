@@ -34,28 +34,34 @@
       </div>
     </div>
   </nav>
+  <!-- fixed sidebar -->
+  <img id="fixedNavbar" class="top-10 right-10 hidden fixed cursor-pointer transform transition duration-500 ease-in-out" src="images/icon-hamburger.svg" alt="">
+  <!-- sidebar -->
+  <div id="sidebar" class="hidden fixed top-0 right-0 w-56 h-full transition-all duration-500 ease-in-out">
+  </div>
 
   <!-- HERO -->
   <section id="hero" class="bg-darkBlue text-white pt-8 pb-64 md:pb-8 lg:pb-64 lg:pt-24">
     <!-- flex container -->
-    <div class="container flex flex-col md:flex-row justify-around items-center mx-auto" data-aos="fade-up">
+    <div class="container flex flex-col md:flex-row justify-around items-center mx-auto px-3" data-aos="fade-up">
       <!-- left -->
       <div class="text-center md:text-left md:mb-0">
-        <h1 class="text-3xl md:text-6xl mb-4">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
-        <h2 class="text-xl md:text-4xl mb-4 text-yellow-500"><span id="animatedText">Front End Developer.</span></h2>
-        <h2 class="text-base mb-4 md:text-2xl md:mb-4">I build beautiful and functional user interfaces, <span class="mb-8 md:hidden">writing clean and efficient code.</span></h2>
-        <h2 class="hidden text-base md:text-2xl mb-8 md:block">writing clean and efficient code.</h2>
+        <h1 class="text-4xl md:text-6xl mb-4 font-bold">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
+        <h2 class="text-2xl md:text-4xl mb-4 text-yellow-500 mb-8 md:mb-0"><span class="font-bold">SOFTWARE ENGINEER</span></h2>
+        <p class="hidden mb-8 text-2xl md:flex">I build beautiful and functional web apps, writing clean and efficient code.</p>
         <div><a class="btn" href="#contact">Let's Connect</a></div>
       </div>
       <!-- right -->
-      <div class="hidden md:block flex-shrink-0 relative group">
-      </div>
+
+
     </div>
     <!-- bottom -->
     <div>
-      <a href="#projects">
-        <p class="text-center mt-64 md:mt-12 lg:mt-64">My Works <i class="fas fa-angle-down" id="arrow"></i></p>
-      </a>
+        <p class="text-center mt-64 md:mt-12 lg:mt-64">
+          <a href="#projects">
+            My Works <i class="fas fa-angle-down" id="arrow"></i>
+          </a>
+        </p>
     </div>
   </section>
 
@@ -71,9 +77,9 @@
       <div class="flex flex-col justify-center items-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right" style="overflow-x: hidden">
        
         <!-- left -->
-        <div class="overflow-hidden rounded-xl md:w-1/2">
+        <div class="overflow-hidden rounded-xl">
           <div class="relative hover:opacity-75 transition-opacity duration-300 ease-in-out" href="#">
-            <img class="w-full h-auto" src="images/todolist.jpg" alt="">
+            <img class="w-full z-0" src="images/todolist.jpg" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
               <div class="badge inline-flex items-center">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
@@ -93,25 +99,36 @@
         
         <!-- right -->
         <div class="space-y-4">
-          <h1 class="font-bold">MERN TODOLIST</h1>
-          <p>Login and write down your very own tasks. This is a complete full stack application that fetches data from a server, including authentication.</p>
-          <button class="btn"><a href="https://mern-app-client-jddwihk94-ieatn.vercel.app/" target="_blank">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/mern-app" target="_blank">CODE</a></button>
+          <h1 class="font-bold">PRODUCTIVITY APP</h1>
+          <p>The essential everyday productivity app! Includes a pomodoro timer, personal habit tracker, quiz app, and to-do list! This is a complete full stack application, including authentication.</p>
+          <div class="mt-2">
+            <a class="btn" href="https://mern-app-client-jddwihk94-ieatn.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://github.com/ieatn/mern-app" target="_blank">CODE</a>
+          </div>
         </div>
       </div>
+
+
+
       <!-- item 2 -->
       <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-left">
         
-        <div class="overflow-hidden rounded-xl md:hidden md:w-1/2">
+        
+        <!-- MOBILE -->
+        <div class="overflow-hidden rounded-xl md:hidden">
           <img src="images/airbnb.png" alt="">
         </div>
+
+
         <div class="space-y-4">
-          <h1 class="font-bold">REACT AIRBNB CLONE</h1>
+          <h1 class="font-bold">AIRBNB CLONE</h1>
           <p>Look at spacious rooms to stay. This is a clone of the Airbnb website.</p>
-          <button class="btn"><a href="https://airbnb-clon-v8763e1hw-ieatn.vercel.app/" target="_blank">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/airbnb-clon" target="_blank">CODE</a></button>
+          <div class="mt-2">
+            <a class="btn" href="https://airbnb-clon-v8763e1hw-ieatn.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://github.com/ieatn/airbnb-clon" target="_blank">CODE</a>
+          </div>
         </div>
-        <div class="hidden relative overflow-hidden rounded-xl md:w-1/2 md:flex">
+        <div class="hidden relative overflow-hidden rounded-xl md:flex">
           <div class="hover:opacity-75 transition-opacity duration-300 ease-in-out" href="#">
             <img class="w-full h-auto" src="images/airbnb.png" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
@@ -127,15 +144,17 @@
           </div>
         </div>
       </div>
+
+      <!-- item 3 -->
       <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right">
         
-        <div class="relative overflow-hidden rounded-xl md:w-1/2">
+        <div class="relative overflow-hidden rounded-xl">
           <div class="hover:opacity-75 transition-opacity duration-300 ease-in-out">
-            <img class="w-full h-auto" src="images/desktop-preview.jpg" alt="">
+            <img class="w-full h-auto" src="images/ecommerce.jpg" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
               <div class="badge inline-flex items-center">
-                <i class="text-yellow-300 text-4xl fa-brands fa-js pl-2"></i>
-                <p class="pr-4">JAVASCRIPT</p>
+                <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
+                <span class="pr-4">REACT</span>
                 <img class="w-10" src="images/tailwind.png" alt="">
                 <span>TAILWIND</span>
               </div>
@@ -143,28 +162,22 @@
           </div>
         </div>
         <div class="space-y-4">
-          <h1 class="font-bold">MANAGE LANDING PAGE</h1>
-          <p>A beautiful responsive landing page. This is a challenge from Front End Mentor.</p>
-          <button class="btn"><a href="https://ieatn.github.io/Frontend-Mentor-Manage-landing-page/" target="_blank">DEMO</a></button>
-          <button class="btn"><a href="https://github.com/ieatn/Frontend-Mentor-Manage-landing-page" target="_blank">CODE</a></button>
+          <h1 class="font-bold">E COMMERCE SNEAKER STORE</h1>
+          <p>A beautiful responsive e commerce page. This is a challenge from Front End Mentor.</p>
+          <div class="mt-2">
+            <a class="btn" href="https://e-commerce-page-1tk90dyl1-ieatn.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://github.com/ieatn/E-Commerce-Page" target="_blank">CODE</a>
+          </div>
         </div>
       </div>
-      <!-- MORE PROJECTS -->
-      <h2 class="border-b text-darkBlue font-bold md:text-2xl" data-aos="fade-in">Fun Projects</h2>
 
+
+      
+      <!-- MORE PROJECTS -->
+      <h2 class="border-b text-darkBlue font-bold md:text-2xl" data-aos="fade-up">Fun Projects</h2>
       <div class="flex flex-col text-center space-y-4 px-3 md:flex-row md:w-full md:space-x-12 md:space-y-0">
         <!-- item 1 -->
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-right">
-          <i class="fa-solid fa-book text-4xl"></i>
-          <h3 class="text-xl">Library</h3>
-          <p>Complete, record, and store your books here! Learned about object oriented programming.</p>
-          <div class="flex space-x-2">
-            <a class="btn" href="https://ieatn.github.io/Library/" target="_blank">Demo</a>
-            <a class="btn" href="https://github.com/ieatn/Library" target="_blank">Code</a>
-          </div>
-        </div>
-        <!-- item 2 -->
-        <div class="flex flex-col items-center rounded-md bg-gray-300 p-6 md:space-y-4 md:w-1/3" data-aos="fade-up">
           <i class="fa-solid fa-paintbrush text-4xl"></i>
           <h3 class="text-xl">Etch a Sketch</h3>
           <p>Draw anything you want! Learned about es6 functions and click events.</p>
@@ -173,14 +186,24 @@
             <a class="btn" href="https://github.com/ieatn/Etch-A-Sketch" target="_blank">Code</a>
           </div>
         </div>
-        <!-- item 3 -->
-        <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-left">
+        <!-- item 2 -->
+        <div class="flex flex-col items-center rounded-md bg-gray-300 p-6 md:space-y-4 md:w-1/3" data-aos="fade-up">
           <i class="text-4xl fa-solid fa-mobile"></i>
           <h3 class="text-xl">FAQ Card</h3>
           <p>An interactive Frequently Asked Questions card. Learned how to make an accordion.</p>
           <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/FAQ-Accordion-Card/" target="_blank">Demo</a>
             <a class="btn" href="https://github.com/ieatn/FAQ-Accordion-Card" target="_blank">Code</a>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-left">
+          <i class="fa-solid fa-book text-4xl"></i>
+          <h3 class="text-xl">Library</h3>
+          <p>Complete, record, and store your books here! Learned about object oriented programming.</p>
+          <div class="flex space-x-2">
+            <a class="btn" href="https://ieatn.github.io/Library/" target="_blank">Demo</a>
+            <a class="btn" href="https://github.com/ieatn/Library" target="_blank">Code</a>
           </div>
         </div>
       </div>
@@ -198,7 +221,7 @@
         <h2 class="text-xl text-yellow-400 md:text-4xl">About me</h2>
         <p class="my-6">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
         <p class="my-6">I'm a student at the University of Washington. I found my passion for coding and am eager to get into the industry of software development!</p> 
-        <p class="my-6">Other than coding, I spend my free time playing soccer and League. Feel free to reach out to me to play some games, or we can discuss the greatest show ever: Attack on Titan!</p>
+        <p class="my-6">Other than coding, I spend my free time playing League of Legends and soccer (I'm gonna win the 2026 World Cup). Feel free to reach out to me to play some games, or we can discuss the greatest show ever: Attack on Titan!</p>
       </div>
     </div>
     <!-- SKILLS -->
