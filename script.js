@@ -1,65 +1,65 @@
-// mobile navbar
-const btn = document.getElementById('menu-btn')
-const menu = document.getElementById('menu')
-btn.addEventListener('click', () => {
-  menu.classList.toggle('flex')
-  menu.classList.toggle('hidden')
-})
+// navbar
+const hamburger = document.getElementById('navBtn');
+const closeIcon = document.getElementById('navClose-btn');
+const sidebar = document.getElementById('sidebar');
 
-// fixed navbar and sidebar in progress and still need to work on mobile nav
-const fixedNavbar = document.getElementById('fixedNavbar');
-
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 800) {
-    fixedNavbar.classList.remove('hidden');
-    fixedNavbar.classList.add('flex');
-    fixedNavbar.classList.add('translate-x-0');
-  } else {
-    fixedNavbar.classList.add('hidden');
-    fixedNavbar.classList.remove('translate-x-0');
-  }
+// Add event listener to hamburger button
+hamburger.addEventListener('click', function() {
+  // Toggle the visibility of the sidebar and update the button icons
+  sidebar.classList.toggle('hidden');
+  hamburger.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
 });
 
-// Add an event listener to your hamburger icon
-document.getElementById("fixedNavbar").addEventListener("click", function() {
-  // Toggle the 'visible' class on your sidebar element
-  document.getElementById("sidebar").classList.toggle("hidden");
-  
-  // Toggle the 'translate-x-[-10]' class on your hamburger icon to move it to the left
-  document.getElementById("fixedNavbar").classList.toggle("translate-x-[-10]");
-  
-  // Replace the image with a white 'x' when the sidebar is visible
-  if (document.getElementById("sidebar").classList.contains("hidden")) {
-    document.getElementById("fixedNavbar").src = "images/icon-hamburger.svg";
-  } else {
-    document.getElementById("fixedNavbar").src = "images/icon-close.svg";
-  }
-  
+// Add event listener to close icon button
+closeIcon.addEventListener('click', function() {
+  // Toggle the visibility of the sidebar and update the button icons
+  sidebar.classList.toggle('hidden');
+  hamburger.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
 });
 
 
-// animated text
-const animatedText = document.getElementById('animatedText')
-const labels = ['SOFTWARE ENGINEER', 'FRONT END DEVELOPER', 'IT STUDENT', 'COMPUTER NERD', 'YOUR NEXT HIRE']
 
-let currentLabelIndex = -1
+const words = ['SOFTWARE ENGINEER', 'FULL STACK DEVELOPER', 'COMPUTER NERD', 'YOUR NEXT HIRE'];
+let i = 0;
+let timer;
 
-function updateLabel() {
-  // Update the label index to the next label in the array
-  currentLabelIndex = (currentLabelIndex + 1) % labels.length
-  
-  // Get the new label text
-  const newLabelText = labels[currentLabelIndex]
-  
-  // Set the animated text content to the new label text
-  animatedText.textContent = newLabelText
-  
-  // Call updateLabel again after 3 seconds
-  setTimeout(updateLabel, 3000)
-}
-// Start the animation
-// updateLabel() 
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('animatedText').innerHTML += word.shift();
+		} else {
+			timer = setTimeout(deletingEffect, 1000); // add delay after fully typing the word
+			return false;
+		};
+		timer = setTimeout(loopTyping, 100);
+	};
+	loopTyping();
+};
 
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('animatedText').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 50);
+	};
+	loopDeleting();
+};
+
+typingEffect();
 
 // scroll up btn
 const scrollTopBtn = document.getElementById('scroll-top-btn');

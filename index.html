@@ -9,52 +9,31 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="lg:text-xl">
 
   <!-- NAVBAR -->
-  <nav class="bg-darkBlue text-white p-6 pb-12 md:pb-24">
+  <nav class="bg-darkBlue text-white p-6 pb-12 md:pb-24 lg:pb-64">
     <div class="container flex items-center justify-between mx-auto">
-      <!-- left  -->
-      <div class="text-2xl font-bold">Dennis Zhang</div>
-      <!-- right -->
-      <div class="hidden md:flex space-x-6">
-        <a class="font-bold hover:text-darkGrayishBlue transition-hover duration-300 ease-in-out" href="#projects">Projects</a>
-        <a class="font-bold hover:text-darkGrayishBlue transition-hover duration-300 ease-in-out" href="#about">About Me</a>
-        <a class="font-bold hover:text-darkGrayishBlue transition-hover duration-300 ease-in-out" href="#contact">Contact</a>
-      </div>
-      <!-- mobile btn -->
-      <button id="menu-btn" class="block md:hidden"><img src="images/icon-hamburger-white.svg" alt=""></button>
-    </div>
-    <!-- mobile menu -->
-      <div class="lg:hidden">
-        <div id="menu" class="hidden flex-col items-center self-center drop-shadow-md space-y-6 mt-12">
-        <a class="hover:text-darkGrayishBlue" href="#projects">Projects</a>
-        <a class="hover:text-darkGrayishBlue" href="#about">About Me</a>
-        <a class="hover:text-darkGrayishBlue" href="#contact">Contact</a>
-      </div>
+      
     </div>
   </nav>
-  <!-- fixed sidebar -->
-  <img id="fixedNavbar" class="top-10 right-10 hidden fixed cursor-pointer transform transition duration-500 ease-in-out" src="images/icon-hamburger.svg" alt="">
-  <!-- sidebar -->
-  <div id="sidebar" class="hidden fixed top-0 right-0 w-56 h-full transition-all duration-500 ease-in-out">
-  </div>
 
   <!-- HERO -->
-  <section id="hero" class="bg-darkBlue text-white pt-8 pb-64 md:pb-8 lg:pb-64 lg:pt-24">
+  <section id="hero" class=" bg-darkBlue text-white pt-8 pb-64 md:pb-8 lg:pb-64 lg:pt-12">
     <!-- flex container -->
     <div class="container flex flex-col md:flex-row justify-around items-center mx-auto px-3" data-aos="fade-up">
-      <!-- left -->
       <div class="text-center md:text-left md:mb-0">
-        <h1 class="text-4xl md:text-6xl mb-4 font-bold">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
-        <h2 class="text-2xl md:text-4xl mb-4 text-yellow-500 mb-8 md:mb-0"><span class="font-bold">SOFTWARE ENGINEER</span></h2>
-        <p class="hidden mb-8 text-2xl md:flex">I build beautiful and functional web apps, writing clean and efficient code.</p>
-        <div><a class="btn" href="#contact">Let's Connect</a></div>
+        <h1 class="text-2xl md:text-6xl font-bold mb-4">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
+        <!-- wow this actually worked! add a minheight so when span is empty page doesnt jump -->
+        <h1 class="text-2xl md:text-4xl text-yellow-500 font-bold" style="min-height: 60px;">
+          <span class="font-bold" id="animatedText"></span>
+        </h1>
+        <h2 class="text-2xl md:text-4xl text-gray-300 font-bold">I bring ideas to life</h1>
+        <div class="mt-10"><a class="btn" href="#contact">Let's Connect</a></div>
       </div>
-      <!-- right -->
-
-
     </div>
+
+
     <!-- bottom -->
     <div>
         <p class="text-center mt-64 md:mt-12 lg:mt-64">
@@ -74,7 +53,7 @@
       
 
       <!-- item 1 -->
-      <div class="flex flex-col justify-center items-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right" style="overflow-x: hidden">
+      <div class="flex flex-col justify-center items-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row pb-2" data-aos="fade-right" style="overflow-x: hidden; overflow-y: hidden;">
        
         <!-- left -->
         <div class="overflow-hidden rounded-xl">
@@ -98,9 +77,9 @@
         </div>
         
         <!-- right -->
-        <div class="space-y-4">
+        <div class="space-y-12">
           <h1 class="font-bold">PRODUCTIVITY APP</h1>
-          <p>The essential everyday productivity app! Includes a pomodoro timer, personal habit tracker, quiz app, and to-do list! This is a complete full stack application, including authentication.</p>
+          <p class="md:text-xl">The essential everyday productivity app! Includes a pomodoro timer, personal habit tracker, quiz app, and to-do list! This is a complete full stack application, including authentication.</p>
           <div class="mt-2">
             <a class="btn" href="https://mern-app-client-jddwihk94-ieatn.vercel.app/" target="_blank">DEMO</a>
             <a class="btn" href="https://github.com/ieatn/mern-app" target="_blank">CODE</a>
@@ -120,12 +99,12 @@
         </div>
 
 
-        <div class="space-y-4">
+        <div class="space-y-12">
           <h1 class="font-bold">AIRBNB CLONE</h1>
           <p>Look at spacious rooms to stay. This is a clone of the Airbnb website.</p>
           <div class="mt-2">
-            <a class="btn" href="https://airbnb-clon-v8763e1hw-ieatn.vercel.app/" target="_blank">DEMO</a>
-            <a class="btn" href="https://github.com/ieatn/airbnb-clon" target="_blank">CODE</a>
+            <a class="btn" href="https://airbnb-clone-khaki-mu.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://github.com/ieatn/airbnb-clone" target="_blank">CODE</a>
           </div>
         </div>
         <div class="hidden relative overflow-hidden rounded-xl md:flex">
@@ -135,11 +114,13 @@
               <div class="badge inline-flex items-center">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
                 <span class="pr-4">REACT</span>
-                <img class="w-8" src="images/firebase.png" alt="">
-                <span class="pr-4">FIREBASE</span>
-                <img class="w-10" src="images/mui.svg" alt="">
-                <span>MATERIAL UI</span>
-              </div>
+                <img class="w-10 bg-none" src="images/ts.png" alt="">
+                <span class="pr-4">TS</span class="pr-4">
+                <img class="w-10" src="images/nextjs.png" alt="">
+                <span class="pr-4">NEXTJS</span>
+                <img class="w-10" src="images/tailwind.png" alt="">
+                <span>TAILWIND</span>
+                </div>
             </div>
           </div>
         </div>
@@ -155,13 +136,11 @@
               <div class="badge inline-flex items-center">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
                 <span class="pr-4">REACT</span>
-                <img class="w-10" src="images/tailwind.png" alt="">
-                <span>TAILWIND</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-12">
           <h1 class="font-bold">E COMMERCE SNEAKER STORE</h1>
           <p>A beautiful responsive e commerce page. This is a challenge from Front End Mentor.</p>
           <div class="mt-2">
@@ -179,7 +158,7 @@
         <!-- item 1 -->
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-right">
           <i class="fa-solid fa-paintbrush text-4xl"></i>
-          <h3 class="text-xl">Etch a Sketch</h3>
+          <h3 class="text-2xl font-semibold">Etch a Sketch</h3>
           <p>Draw anything you want! Learned about es6 functions and click events.</p>
           <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/Etch-A-Sketch/" target="_blank">Demo</a>
@@ -189,7 +168,7 @@
         <!-- item 2 -->
         <div class="flex flex-col items-center rounded-md bg-gray-300 p-6 md:space-y-4 md:w-1/3" data-aos="fade-up">
           <i class="text-4xl fa-solid fa-mobile"></i>
-          <h3 class="text-xl">FAQ Card</h3>
+          <h3 class="text-2xl font-semibold">FAQ Card</h3>
           <p>An interactive Frequently Asked Questions card. Learned how to make an accordion.</p>
           <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/FAQ-Accordion-Card/" target="_blank">Demo</a>
@@ -199,8 +178,8 @@
         <!-- item 3 -->
         <div class="flex flex-col items-center rounded-md bg-blue-200 p-6 md:space-y-4 md:w-1/3" data-aos="fade-left">
           <i class="fa-solid fa-book text-4xl"></i>
-          <h3 class="text-xl">Library</h3>
-          <p>Complete, record, and store your books here! Learned about object oriented programming.</p>
+          <h3 class="text-2xl font-semibold">Library</h3>
+          <p>Complete, record, and store your books here! Learned object oriented programming.</p>
           <div class="flex space-x-2">
             <a class="btn" href="https://ieatn.github.io/Library/" target="_blank">Demo</a>
             <a class="btn" href="https://github.com/ieatn/Library" target="_blank">Code</a>
@@ -219,9 +198,9 @@
       <!-- right -->
       <div class="max-w-md text-center px-3 md:w-1/2 md:text-left md:ml-12 md:px-0">
         <h2 class="text-xl text-yellow-400 md:text-4xl">About me</h2>
-        <p class="my-6">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
-        <p class="my-6">I'm a student at the University of Washington. I found my passion for coding and am eager to get into the industry of software development!</p> 
-        <p class="my-6">Other than coding, I spend my free time playing League of Legends and soccer (I'm gonna win the 2026 World Cup). Feel free to reach out to me to play some games, or we can discuss the greatest show ever: Attack on Titan!</p>
+        <p class="my-6 md:text-xl">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
+        <p class="my-6 md:text-xl">I'm a student at the University of Washington. I found my passion for coding and am eager to get into the industry of software development!</p> 
+        <p class="my-6 md:text-xl">Other than coding, I spend my free time playing League of Legends and soccer (I'm gonna win the 2026 World Cup). Feel free to reach out to me to play some games, or we can discuss the greatest show ever: Attack on Titan!</p>
       </div>
     </div>
     <!-- SKILLS -->
@@ -287,8 +266,8 @@
     <div class="container flex flex-col mx-auto p-6 md:justify-around mt-12 md:mt-32 md:flex-row md:space-x-32">
       <!-- LEFT -->
       <div class="max-w-md">
-        <h2 class="text-center md:text-left">Let's Connect!</h2>
-        <p class="hidden md:block">If you ever want to have a quick chat - you can find me on social media or you can message me here!</p>
+        <h2 class="text-center md:text-left md:text-xl">Let's Connect!</h2>
+        <p class="hidden md:block md:text-xl">If you ever want to have a quick chat - you can find me on social media or you can message me here!</p>
         <!-- SOCIAL MEDIA -->
         <div class="flex justify-between max-w-md mx-auto mt-6">
           <a class="relative group" href="https://github.com/ieatn" target="_blank" >
@@ -333,14 +312,47 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="relative">
     <p class="text-center text-sm mt-3 pt-3">Made with 🧡 by Dennis Zhang</p>
+    <button id="scroll-top-btn" class="absolute right-7 bottom-3 bg-gray-900 text-white rounded-full shadow-lg">
+      <i class="inline-flex items-center justify-center w-10 h-10 fas fa-arrow-up"></i>
+    </button>
   </footer>
 
-  <button id="scroll-top-btn" class="fixed bottom-6 right-7 bg-gray-900 text-white rounded-full shadow-lg">
-    <i class="inline-flex items-center justify-center w-10 h-10 fas fa-arrow-up"></i>
-  </button>
+  
 
+  <!-- for some reason need to put content below project images so they go over -->
+  <!-- SIDEBAR -->
+  <div class="relative">
+    <button id="navBtn" class="z-50 fixed top-6 right-7 bg-white text-white rounded-full shadow-lg flex items-center justify-center w-10 h-10">
+      <img src="images/icon-hamburger.svg" alt="Hamburger Menu">
+    </button>
+    <button id="navClose-btn" class="hidden z-50 fixed top-6 right-7 bg-white text-white rounded-full shadow-lg flex items-center justify-center w-10 h-10">
+      <img src="images/icon-close.svg" alt="Hamburger Menu">
+    </button>
+    <div class="hidden w-64 bg-white h-screen fixed top-0 right-0 z-40" id="sidebar">
+      <nav class="mt-20">
+        <ul class="list-none">
+          <li class="mb-2">
+            <a href="#projects" class="block py-2 px-4 text-gray-400 hover:text-white hover:bg-gray-700">
+              Projects
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="#about" class="block py-2 px-4 text-gray-400 hover:text-white hover:bg-gray-700">
+              About Me
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="#contact" class="block py-2 px-4 text-gray-400 hover:text-white hover:bg-gray-700">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
