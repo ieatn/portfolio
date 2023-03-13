@@ -1,27 +1,23 @@
 // navbar
-const hamburger = document.getElementById('navBtn');
-const closeIcon = document.getElementById('navClose-btn');
-const sidebar = document.getElementById('sidebar');
+const navBtn = document.querySelector('#navBtn');
+  const navClose = document.querySelector('#navClose');
+  const mobileNavLinks = document.querySelectorAll('#mobileNav li a');
 
-// Add event listener to hamburger button
-hamburger.addEventListener('click', function() {
-  // Toggle the visibility of the sidebar and update the button icons
-  sidebar.classList.toggle('hidden');
-  hamburger.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
+  navBtn.addEventListener('click', function() {
+    document.querySelector('#mobileNav').classList.toggle('hidden');
+  });
 
-// Add event listener to close icon button
-closeIcon.addEventListener('click', function() {
-  // Toggle the visibility of the sidebar and update the button icons
-  sidebar.classList.toggle('hidden');
-  hamburger.classList.toggle('hidden');
-  closeIcon.classList.toggle('hidden');
-});
+  navClose.addEventListener('click', function() {
+    document.querySelector('#mobileNav').classList.toggle('hidden');
+  });
 
+  mobileNavLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.querySelector('#mobileNav').classList.toggle('hidden');
+    });
+  });
 
-
-const words = ['SOFTWARE ENGINEER', 'FULL STACK DEVELOPER', 'COMPUTER NERD', 'YOUR NEXT HIRE'];
+const words = ['SOFTWARE ENGINEER', 'FRONT END DEVELOPER', 'COMPUTER NERD', 'YOUR NEXT HIRE'];
 let i = 0;
 let timer;
 
