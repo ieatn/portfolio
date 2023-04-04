@@ -12,18 +12,20 @@
 <body class="lg:text-xl">
 
   <!-- HERO -->
-  <section id="hero" class=" bg-darkBlue text-white pb-64 md:pb-8 lg:pb-64">
+  <section id="hero" class="bg-darkBlue text-white pb-64">
     <!-- flex container -->
     <div class="container flex flex-col md:flex-row justify-around items-center mx-auto px-3 pt-64" data-aos="fade-up">
       <div class="text-center md:text-left md:mb-0">
         <h1 class="text-2xl md:text-6xl font-bold mb-4">Hello! <span id="wave">👋</span> I'm Dennis.</h1>
         <!-- wow this actually worked! add a minheight so when span is empty page doesnt jump -->
-        <h1 class="text-2xl md:text-4xl text-yellow-500 font-bold" style="min-height: 60px;">
+        <h1 class="text-2xl md:text-4xl text-yellow-500 font-bold underline" style="min-height: 60px;">
           <span class="font-bold" id="animatedText"></span>
         </h1>
         <h2 class="text-2xl md:text-4xl text-gray-300 font-bold">I bring ideas to life</h1>
         <div class="mt-10"><a class="btn" href="#contact">Let's Connect</a></div>
       </div>
+      <!-- right -->
+
     </div>
 
     <!-- bottom -->
@@ -40,100 +42,148 @@
   <section id="projects" class="mt-36">
     <!-- perma bug with aos library breaking on small screens because of the added padding, 
     2 hours searching and found solution, just add the inline style tag at the end -->
-    <div class="container flex flex-col justify-center items-center text-center mx-auto space-y-20 pt-20 md:text-left" style="overflow-x: hidden; overflow-y: hidden">
-      
+    <div class="lg:container flex flex-col justify-center items-center text-center mx-auto space-y-20 pt-20 md:text-left" style="overflow-x: hidden; overflow-y: hidden">
+
       <!-- item 1 -->
-      <div class="flex flex-col justify-center items-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row pb-2" data-aos="fade-right" style="overflow-x: hidden; overflow-y: hidden;">
+      <div class="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:space-x-12 pb-2" data-aos="fade-right" style="overflow-x: hidden; overflow-y: hidden;">
+        
+        
+        <!-- mobile hidden -->
         <div class="overflow-hidden rounded-xl md:hidden">
           <img src="images/airbnb.png" alt="">
         </div>
-        <div class="space-y-12">
+
+
+
+        <div class="flex-1 space-y-12">
           <h1 class="font-bold">AIRBNB CLONE</h1>
-          <p>Look at spacious rooms to stay. This is a clone of the Airbnb website.</p>
+          <p>Discover and book unique accommodations around the world with this Airbnb clone web application, offering a user-friendly interface and a vast selection of properties to choose from. </p>
           <div class="mt-2">
             <a class="btn" href="https://airbnb-clone-khaki-mu.vercel.app/" target="_blank">DEMO</a>
             <a class="btn" href="https://github.com/ieatn/airbnb-clone" target="_blank">CODE</a>
           </div>
         </div>
-        <div class="hidden relative overflow-hidden rounded-xl md:flex">
-          <div class="hover:opacity-75 transition-opacity duration-300 ease-in-out" href="#">
-            <img class="w-full h-auto" src="images/airbnb.png" alt="">
+
+        <div class="flex-1 hidden relative overflow-hidden rounded-xl md:flex">
+          <div class="border hover:opacity-75 transition-opacity duration-300 ease-in-out" href="#">
+            <img class="w-full h-auto rounded-xl" src="images/airbnb.png" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-              <div class="badge inline-flex items-center">
+              <div class="badge inline-flex items-center space-x-6 xl:space-x-12">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
-                <span class="pr-4">REACT</span>
+                <span class="pr-4 hidden xl:flex">REACT</span>
                 <img class="w-10 bg-none" src="images/ts.png" alt="">
-                <span class="pr-4">TS</span class="pr-4">
+                <span class="pr-4 hidden xl:flex">TS</span>
                 <img class="w-10" src="images/nextjs.png" alt="">
-                <span class="pr-4">NEXTJS</span>
+                <span class="pr-4 hidden xl:flex">NEXTJS</span>
                 <img class="w-10" src="images/tailwind.png" alt="">
-                <span>TAILWIND</span>
+                <span class="hidden xl:flex">TAILWIND</span>
                 </div>
             </div>
           </div>
         </div>
+
       </div>
 
 
-      <!-- item 2 -->
-      <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-left">
 
-        <div class="relative overflow-hidden rounded-xl">
+
+
+      <!-- item 2 -->
+
+      <div class="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:space-x-12" data-aos="fade-left">
+
+        <div class="flex-1 relative overflow-hidden rounded-xl">
           <div class="hover:opacity-75 transition-opacity duration-300 ease-in-out">
-            <img class="w-full h-auto" src="images/ecommerce.jpg" alt="">
+            <img class="w-full h-auto rounded-xl" src="images/landing.png" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-              <div class="badge inline-flex items-center">
+              <div class="badge inline-flex items-center space-x-6 lg:space-x-0">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
-                <span class="pr-4">REACT</span>
-                <img class="w-10" src="images/tailwind.png" alt="">
-                <span class="pr-4">TAILWIND</span>
-                <img class="w-10 rounded-lg" src="https://play-lh.googleusercontent.com/2PS6w7uBztfuMys5fgodNkTwTOE6bLVB2cJYbu5GHlARAK36FzO5bUfMDP9cEJk__cE" alt="">
-                <span>STRIPE</span>
+                <span class="pr-4 hidden xl:flex">REACT</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="space-y-12">
-          <h1 class="font-bold">E COMMERCE SNEAKER STORE</h1>
+      
+        <div class="flex-1 space-y-12">
+          <h1 class="font-bold">Restaurant Landing Page</h1>
           <p>
-            A beautiful responsive e commerce page. Use this fake credit card: 4242 4242 4242 4242 for the card number and enter any expiration date, CVC, or ZIP to test out the checkout page.
+            Experience the perfect dining ambiance with this modern UI/UX restaurant landing page, designed to provide a seamless and engaging user experience while showcasing a exquisite menu and exceptional service.
+          </p>
+          <div class="mt-2">
+            <a class="btn" href="https://react-landing-page2-a00tnmznw-ieatn.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://github.com/ieatn/react-landing-page2" target="_blank">CODE</a>
+          </div>
+        </div>
+      
+      </div>
+      
+
+
+      <!-- item 3 -->
+      <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-12 md:flex-row" data-aos="fade-right">
+
+        <div class="flex-1 relative overflow-hidden rounded-xl">
+          <div class="hover:opacity-75 transition-opacity duration-300 ease-in-out">
+            <img class="w-full h-auto" src="images/ecommerce.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
+              <div class="badge inline-flex items-center space-x-6">
+                <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
+                <span class="pr-4 hidden xl:flex">REACT</span>
+                <img class="w-10" src="images/tailwind.png" alt="">
+                <span class="pr-4 hidden xl:flex">TAILWIND</span>
+                <img class="w-10 rounded-xl" src="https://play-lh.googleusercontent.com/2PS6w7uBztfuMys5fgodNkTwTOE6bLVB2cJYbu5GHlARAK36FzO5bUfMDP9cEJk__cE" alt="">
+                <span class="hidden xl:flex">STRIPE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 space-y-12">
+          <h1 class="font-bold">E COMMERCE STORE</h1>
+          <p>
+            Experience hassle-free shopping with this e-commerce store's functional shopping cart. Browse a wide range of products, enjoy seamless checkout, and shop securely with its user-friendly interface.
           </p>
           <div class="mt-2">
             <a class="btn" href="https://e-commerce-page-9z4p9nzaz-ieatn.vercel.app/" target="_blank">DEMO</a>
             <a class="btn" href="https://github.com/ieatn/E-Commerce-Page" target="_blank">CODE</a>
           </div>
         </div>
+        
       </div>
 
-      <!-- item 3 -->
-      <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-32 md:flex-row" data-aos="fade-right">
+      <!-- item 4 -->
+      <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:flex-row md:space-x-12" data-aos="fade-left">
         
+        <!-- mobile -->
+        <div class="overflow-hidden rounded-xl md:hidden">
+          <img src="images/todolist.jpg" alt="">
+        </div>
+
         <!-- left -->
-        <div class="space-y-12">
+        <div class="flex-2 space-y-12">
           <h1 class="font-bold">PRODUCTIVITY APP</h1>
-          <p class="md:text-xl">The essential everyday to-do list app! This is a complete full stack application, including authentication.</p>
+          <p class="md:text-xl">Maximize your productivity using this user-friendly interface for efficient task management and added authentication. Achieve your goals with ease.</p>
           <div class="mt-2 pb-2">
-            <a class="btn" href="https://mern-app-client-coral.vercel.app/" target="_blank">DEMO</a>
+            <a class="btn" href="https://mern-app-client-55k2fwqhx-ieatn.vercel.app/" target="_blank">DEMO</a>
             <a class="btn" href="https://github.com/ieatn/mern-app" target="_blank">CODE</a>
           </div>
         </div>
 
         <!-- right -->
-        <div class="overflow-hidden rounded-xl">
+        <div class="flex-3 overflow-hidden rounded-xl hidden md:flex">
           <div class="relative hover:opacity-75 transition-opacity duration-300 ease-in-out" href="#">
             <img class="w-full z-0" src="images/todolist.jpg" alt="">
             <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100">
-              <div class="badge inline-flex items-center">
+              <div class="badge inline-flex items-center space-x-6">
                 <i class="text-blue-500 text-4xl fa-brands fa-react"></i>
-                <span class="pr-4">REACT</span>
+                <span class="pr-4 hidden xl:flex">REACT</span>
                 <i class="text-green-900 text-4xl fa-brands fa-node-js"></i>
-                <span class="pr-4">NODEJS</span class="pr-4">
+                <span class="pr-4 hidden xl:flex">NODEJS</span class="pr-4">
                 <img class="w-10 bg-none" src="images/express.png" alt="">
-                <span class="pr-4">EXPRESS</span class="pr-4">
+                <span class="pr-4 hidden xl:flex">EXPRESS</span class="pr-4">
                 <img class="w-10" src="images/mongodb.svg" alt="">
-                <span class="pr-4">MONGODB</span>
+                <span class="pr-4 hidden xl:flex">MONGODB</span>
                 <img class="w-10" src="images/tailwind.png" alt="">
-                <span>TAILWIND</span>
+                <span class="hidden xl:flex">TAILWIND</span>
               </div>
             </div>
           </div>
@@ -151,7 +201,7 @@
       <div class="max-w-md text-center px-3 md:w-1/2 md:text-left md:ml-12 md:px-0">
         <h2 class="text-xl text-yellow-400 md:text-4xl">About me</h2>
         <p class="my-6 md:text-xl">I create products that I love and believe in. Want to do something cool together? Let's talk!</p>
-        <p class="my-6 md:text-xl">I'm a student at the University of Washington. I found my passion for coding and am eager to get into the industry of software development!</p> 
+        <p class="my-6 md:text-xl">I'm a student at the University of Washington. I found my passion for coding and I'm eager to get into the industry of software development!</p> 
         <p class="my-6 md:text-xl">Other than coding, I spend my free time playing League of Legends and soccer. Feel free to reach out to me to play some games, or we can discuss the greatest show ever: Attack on Titan!</p>
       </div>
     </div>
@@ -274,7 +324,7 @@
   <!-- NAVBAR -->
   <nav class="bg-darkBlue fixed top-0 w-full text-white p-6">
     <div class="hidden md:flex container items-center justify-between mx-auto">
-      <a href="#" class="text-white font-bold text-xl">Dennis</a>
+      <a href="#" class="text-white font-bold text-xl">ieatn</a>
       <ul class="flex items-center space-x-6">
         <li><a class="hover:text-darkGrayishBlue transition duration-200 ease-in-out" href="#projects">Projects</a></li>
         <li><a class="hover:text-darkGrayishBlue transition duration-200 ease-in-out" href="#about">About</a></li>
@@ -283,7 +333,7 @@
     </div>
     <!-- mobile -->
     <div class="flex items-center justify-between mx-auto md:hidden">
-      <a href="#" class="text-white font-bold text-xl">Dennis</a>
+      <a href="#" class="text-white font-bold text-xl">ieatn</a>
       <button id="navBtn">
         <img src="images/icon-hamburger-white.svg" alt="">
       </button>
